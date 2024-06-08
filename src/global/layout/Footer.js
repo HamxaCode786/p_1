@@ -8,7 +8,7 @@ const Footer = () => {
            <img class="img_1" src={social}/>
         </div>
         <div class="ht_2">
-          <p> Contact Information & other details</p>
+          <p> Contact Information & other details and checking git hub files</p>
         </div>
     </div>
   )
