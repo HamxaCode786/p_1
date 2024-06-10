@@ -106,3 +106,161 @@ gap: 0px;
 opacity: 0px;
 
 }
+
+.img_2 {
+width: 171px;
+height: 85px;
+top: 55px;
+margin-left: 181px;
+gap: 0px;
+opacity: 0px;
+padding-top: 10px;
+
+
+}
+
+
+.bar_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #fff;
+    border-width: 3px;
+    border-style: solid;
+    height: 130px;
+    width: 100%;
+    }
+.home_1 {
+
+width: 75px;
+height: 33px;
+background-color: #fff;
+
+}
+.bar_background {
+    background-image: url(../assets/image/background.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+
+}
+.heading_1 {
+
+    
+font-family: Inter;
+font-size: 64px;
+font-weight: 700;
+line-height: 77.45px;
+text-align: center;
+color: #FD8901;
+margin-top: 100px;
+}
+.heading_2 {
+font-family: Inter;
+font-size: 64px;
+font-weight: 700;
+line-height: 77.45px;
+text-align: center;
+color: #FFFFFF;
+
+
+}
+.heading_3 {
+    font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 50PX;
+
+}
+
+
+.custom-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fb_1 {
+
+    background-color: #fff;
+    color: black;
+    width: 260px;
+    height: 70px;
+    border-radius: 0%;
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center;
+
+
+}
+
+.fb_2 {
+
+    background-color: #fff;
+    color: black;
+    border-radius: 0%;
+    width: 260px;
+    height: 70px;
+    border-left: #313131;
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center
+
+
+}
+.fb_3 {
+
+    background-color: #fff;
+    color: black;
+    border-radius: 0%;
+    width: 260px;
+    height: 70px;
+    border-left: #313131;
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center
+
+}
+
+.custom-button-group2 {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 15px;
+
+}
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
