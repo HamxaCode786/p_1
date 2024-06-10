@@ -143,10 +143,25 @@ background-color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1;
+    background-color: #313131;
+    opacity: 85%;
+    
 
 
 }
+.website_links {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
 .heading_1 {
 
     
@@ -274,9 +289,119 @@ border: 2px solid;
     
     }
     
-   
+.editable_dropdowns {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 30px;
+    
+
+}   
+
+.d_1 {
+width: 190px;
+height: 39px;
+top: 580px;
+gap: 0px;
+border: radius 0;
+border: 0.5px 0px 0px 0px;
+opacity: 0px;
+text-align: center;
+background-color: #FEFEFE;
+}
+
+.d_2 {
+    width: 190px;
+    height: 39px;
+    top: 580px;
+    gap: 0px;
+    border: radius 0;
+    border: 0.5px 0px 0px 0px;
+    opacity: 0px;
+    text-align: center;
+    background-color: #FEFEFE;
+
+}
+
+.d_3 {
+    width: 190px;
+    height: 39px;
+    top: 580px;
+    gap: 0px;
+    border: radius 0;
+    border: 0px 0px 0px 0px;
+    opacity: 0px;
+    text-align: center;
+    background-color: #FEFEFE;
+
+}
 
 
+.d_4 {
+    width: 190px;
+    height: 39px;
+    top: 580px;
+    gap: 0px;
+    border: radius 0;
+    opacity: 0px;
+    text-align: center;
+    background-color: #FEFEFE;
+
+}
+
+
+
+
+.fb_6 {
+    width: 185px;
+    background: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    border-color:#FEFEFE;
+    border: 2px solid;
+    
+}
+.fb_7 {
+    width: 180px;
+    background: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    border-color:#FEFEFE;
+    border: 2px solid;
+    
+}
+.fb_8 {
+    width: 180px;
+    background: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    border-color:#FEFEFE;
+    border: 2px solid;
+    
+}
+.fb_9 {
+    width: 185px;
+    background: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    border-color:#FEFEFE;
+    border: 2px solid;
+    
+}    
 
 
 

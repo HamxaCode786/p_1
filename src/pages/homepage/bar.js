@@ -47,6 +47,53 @@ const bar = () => {
           Verified Identity
         </Button>
         </div> 
+        <div class="editable_dropdowns">
+          <div>
+        <select class="d_1" id="editableDropdown" onchange="handleChange(this.value)">
+        <option value="" disabled selected>Price From</option>
+        <option value="option1">500</option>
+        <option value="option2">1000</option>
+        <option value="option3">1500</option>
+        </select>
+        <select class="d_2" id="editableDropdown" onchange="handleChange(this.value)">
+        <option value="" disabled selected>Price To</option>
+        <option value="option1">2000</option>
+        <option value="option2">3000</option>
+        <option value="option3">4000</option>
+        </select>
+        </div>
+        <div>
+        <select class="d_3" id="editableDropdown" onchange="handleChange(this.value)">
+        <option value="" disabled selected>Price From</option>
+        <option value="option1">500</option>
+        <option value="option2">1000</option>
+        <option value="option3">1500</option>
+        </select>
+        <select class="d_4" id="editableDropdown" onchange="handleChange(this.value)">
+        <option value="" disabled selected>Price To</option>
+        <option value="option1">2000</option>
+        <option value="option2">3000</option>
+        <option value="option3">4000</option>
+        </select>
+        
+        </div> 
+        </div>
+        <div class="website_links">
+      <Button a href="https://www.facebook.com/" className="fb_6">
+         Facebook
+        </Button>
+        <Button a  href="https://www.instagram.com/" className="fb_7">
+          Instagram
+        </Button>
+        <Button  href="https://www.youtube.com/" className="fb_8">
+         Youtube
+        </Button>
+        <Button  href="https://www.linkedin.com/" className="fb_9">
+          Twitter
+        </Button>
+
+        </div>
+
 
 
     </div>   
