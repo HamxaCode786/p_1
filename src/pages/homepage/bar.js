@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import social from '../../assets/image/social.png';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Message from '../../assets/image/messagelogo.png';
 const bar = () => {
   return (
     <div class="bar_background">
@@ -10,10 +11,10 @@ const bar = () => {
         <img class="img_2" src={social} />
         </div>
         <div class="buttons_1">          
-          <Button class="home_1">Home</Button>
-          <Button class="login" >Login</Button>
-          <Button class="register" >Register</Button>
-          <Button class="start_sale" >Start Sale</Button>
+          <Button className="home_1">Home</Button>
+          <Button className="login" >Login</Button>
+          <Button className="register" >Register</Button>
+          <Button className="start_sale" >Start Sale</Button>
         </div>
 
     </div>
@@ -93,6 +94,15 @@ const bar = () => {
         </Button>
 
         </div>
+        <div class="search_Button">
+        <Button  href="" className="fb_10">
+         Search
+         </Button>
+        </div>
+        <div class="Message_logo">
+          <img src={Message} />
+        </div>
+
 
 
 
