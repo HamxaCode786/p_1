@@ -1,7 +1,5 @@
 import Layout from "./global/layout";
 import Homepage from "./pages/homepage";
-import './style/responsive.css';
-
 
 function App() {
   return (
@@ -10,14 +8,6 @@ function App() {
       <Homepage />
       </Layout>
     </div>
-  );
-
-
-  return (
-    <div className="container">
-      <button className="custom-button">Click Me</button>
-    </div>
-
   );
 }
 
