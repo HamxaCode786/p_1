@@ -240,11 +240,40 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-top: 15px;
+gap: 10px;
+padding-bottom: 20px;
 
 }
 
+.fb_4 {
+width: 385px;
+background: transparent;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center;
+border-color:#FEFEFE;
+border: 2px solid;
 
 
+
+}
+
+.fb_5 {
+    width: 385px;
+    background: transparent;
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center;
+border-color:#FEFEFE;
+border: 2px solid;
+
+    
+    }
+    
    
 
 
