@@ -1,0 +1,93 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .container {
+      padding: 15px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .container {
+      padding: 25px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 30px;
+    }
+  }
+  
+  /* Orientation: landscape */
+  @media (orientation: landscape) {
+    .container {
+      padding: 20px;
+    }
+  
+    .custom-button {
+      width: auto;
+      font-size: 16px;
+    }
+  }
+  
+  /* Orientation: portrait */
+  @media (orientation: portrait) {
+    .container {
+      padding: 10px;
+    }
+  
+    .custom-button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  /* Retina displays */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2),
+         only screen and (min-resolution: 192dpi),
+         only screen and (min-resolution: 2dppx) {
+    .custom-button {
+      font-size: 18px;
+    }
+  }
+  
