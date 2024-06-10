@@ -24,7 +24,7 @@ const card = () => {
 
         <div class="card_section1">
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -32,14 +32,14 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
 
             </div>
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -47,14 +47,14 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
 
             </div>
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -62,7 +62,7 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
@@ -73,7 +73,7 @@ const card = () => {
         </div>
         <div class="card_section1">
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -81,14 +81,14 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
 
             </div>
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -96,14 +96,14 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
 
             </div>
             <div class="card_1">
-                <h1>premium <span>add</span></h1>
+                <h1>Premium <span>Add</span></h1>
                 <img class="cimg_1" src={Card}/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
@@ -111,7 +111,7 @@ const card = () => {
                 <h5>Income: 150$ Per Month</h5>
                 <h6>Subscriber: 180000</h6>
                 <h7>Easy To Purchase</h7>
-                <Button>
+                <Button className="cardbutton_1">
                     Buy Channel
                 </Button>
 
