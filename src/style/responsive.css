@@ -1,93 +1,83 @@
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    background-color: #f8f8f8;
-  }
-  
-  .custom-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .custom-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
-    .container {
-      padding: 15px;
-    }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .container {
-      padding: 20px;
-    }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .container {
-      padding: 25px;
-    }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .container {
-      padding: 30px;
-    }
-  }
-  
-  /* Orientation: landscape */
-  @media (orientation: landscape) {
-    .container {
-      padding: 20px;
-    }
-  
-    .custom-button {
-      width: auto;
-      font-size: 16px;
-    }
-  }
-  
-  /* Orientation: portrait */
-  @media (orientation: portrait) {
-    .container {
-      padding: 10px;
-    }
-  
-    .custom-button {
-      width: 100%;
-      font-size: 14px;
-    }
-  }
-  
-  /* Retina displays */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-         only screen and (min--moz-device-pixel-ratio: 2),
-         only screen and (-o-min-device-pixel-ratio: 2/1),
-         only screen and (min-device-pixel-ratio: 2),
-         only screen and (min-resolution: 192dpi),
-         only screen and (min-resolution: 2dppx) {
-    .custom-button {
-      font-size: 18px;
-    }
-  }
-  
+
+    @media screen and (max-width: 480px) {
+        body {
+          font-size: 12px;
+        }
+
+        .Container1 {
+            display: flex;
+            flex-direction: column;/* Allow items to wrap to the next line */
+            align-items: center;
+            height: 150px;
+            
+          }
+          .icons_1{
+
+            margin-top: 16px;
+            margin-right: 150px;
+          }
+
+
+
+
+          .Para1 {
+            padding-top: 20px; /* Increase margin for better spacing */
+            width: 600px;
+            margin-left: 160px;
+
+            
+          }
+          .t1 {
+
+            padding-bottom: 45px;
+            padding-left: 1rem;
+          }
+          .bar_1 {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+
+          .img_2 {
+            height: 80px;
+            width: 100px; 
+            float: left;
+            margin-left: 10px;
+            padding: 10px;
+          }
+          .buttons_1{
+            display: block;
+          }
+
+          .home_1{
+            margin: 0;
+        padding: 0;        }
+
+        .login{
+            margin: 0;
+        padding: 0;       
+
+        }
+        .Register {
+            margin: 0;
+        padding: 0;       
+        }
+      .start_sale {
+        margin-left: 80px;
+
+      }
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
-
 function Header() {
   return (
     <>
@@ -48,3 +47,4 @@ function Header() {
 }
 
 export default Header;
+
