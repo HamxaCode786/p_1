@@ -68,89 +68,44 @@
 
       }
 
+
+      .heading_1 {
+        margin: 6px;
       }
 
-      @media screen and (max-width: 680px) {
-        body {
-          font-size: 12px;
-        }
+      .heading_2 {
+        margin: 10px;
+      }
+      .heading_3 {
+        margin: 10px;
+      }
+      .custom-button-group {
 
-        .Container1 {
-            display: flex;
-            flex-direction: column;/* Allow items to wrap to the next line */
-            align-items: center;
-            height: 150px;
-            
-            
-          }
-          .icons_1{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .custom-button-group2 {
 
-            margin-top: 16px;
-            margin-right: 320px;
-          }
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .editable_dropdowns {
 
-
-
-
-          .Para1 {
-            padding-top: 20px; /* Increase margin for better spacing */
-            width: 600px;
-            margin-left: 15px;
-
-            
-          }
-          .t1 {
-
-            padding-bottom: 45px;
-            padding-left: 1rem;
-          }
-          .bar_1 {
-
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          }
-
-          .img_2 {
-            height: 80px;
-            width: 100px; 
-            float: left;
-            margin-left: 10px;
-            padding: 10px;
-          }
-          .buttons_1{
-            display: block;
-          }
-
-          .home_1{
-            margin: 0;
-        padding: 0;        }
-
-        .login{
-            margin: 0;
-        padding: 0;       
-
-        }
-        .Register {
-            margin: 0;
-        padding: 0;       
-        }
-      .start_sale {
-        margin-left: 80px;
-
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items:center;
+        gap: 75px;
+      }
+      .website_links {
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       }
 
-
-
-
-
-
-
-
-
-
+      
 
 
 
