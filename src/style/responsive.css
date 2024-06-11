@@ -13,7 +13,7 @@
           }
           .icons_1{
 
-            margin-top: 16px;
+            margin-top: 30px;
             margin-right: 150px;
           }
 
@@ -105,7 +105,116 @@
 
       }
 
-      
+      @media screen and (max-width: 768px) {
+        body {
+          font-size: 10px;
+        }
+
+        .Container1 {
+            display: flex;
+            flex-direction: column;/* Allow items to wrap to the next line */
+            align-items: center;
+            height: 150px;
+            
+          }
+          .icons_1{
+
+            margin-top: 30px;
+            margin-right: 400px;
+          }
+
+
+
+
+          .Para1 {
+            padding-top: 20px; /* Increase margin for better spacing */
+            width: 600px;
+            margin-right: 100px;
+
+            
+          }
+          .t1 {
+
+            padding-bottom: 45px;
+            padding-left: 1rem;
+          }
+          .bar_1 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .img_2 {
+            height: 80px;
+            width: 130px; 
+            float: left;
+            margin-left: 10px;
+            padding: 10px;
+          }
+          .buttons_1{
+            width: 400px;
+            display: block;
+            gap:10px;
+            margin-right: 180px;
+          }
+
+          .home_1{
+            margin: 0;
+        padding: 0;        }
+
+        .login{
+            margin: 0;
+        padding: 0;       
+
+        }
+        .Register {
+            margin: 0;
+        padding: 0;       
+        }
+      .start_sale {
+        margin-left: 0;
+        padding-left: 0;
+
+      }
+
+
+      .heading_1 {
+        margin: 6px;
+      }
+
+      .heading_2 {
+        margin: 10px;
+      }
+      .heading_3 {
+        margin: 10px;
+      }
+      .custom-button-group {
+
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .custom-button-group2 {
+
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .editable_dropdowns {
+
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items:center;
+        gap: 75px;
+      }
+      .website_links {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+        
+        
+    }
 
 
 
