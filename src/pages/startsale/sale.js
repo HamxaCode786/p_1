@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Offcanvas } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 function Sale() {
   const [show, setShow] = useState(false);
@@ -20,9 +22,9 @@ function Sale() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="list-unstyled">
-            <li><a href="#" className="nav-link">Home</a></li>
-            <li><a href="#" className="nav-link">About</a></li>
-            <li><a href="#" className="nav-link">Services</a></li>
+            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="bell" /></a></li>
+            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="inbox" /></a></li>
+            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="square" /></a></li>
             
           </ul>
         </Offcanvas.Body>
