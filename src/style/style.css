@@ -753,12 +753,28 @@ box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
     padding-top: 15px;
 
 }
+.text-muted1 {
+color: #FEFEFE;
+font-size: 18px;
 
-.pt-4 {
 
 }
 
 
 
+.ms-5 {
+    color: #FEFEFE;
+font-size: 18px;
 
 
+
+}
+.link-info1 {
+
+font-size: 30px;
+color: #FEFEFE;
+font-weight: 350;
+
+
+
+}
