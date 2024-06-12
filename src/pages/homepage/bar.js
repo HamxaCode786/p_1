@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import social from "../../assets/image/social.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import Message from "../../assets/image/messagelogo.png";
+import { Link } from 'react-router-dom';
 const bar = () => {
   return (
     <div class="bar_background">
@@ -15,7 +16,7 @@ const bar = () => {
           <Button className="home_1">Home</Button>
           <Button className="login">Login</Button>
           <Button className="register">Register</Button>
-          <Button className="start_sale">Start Sale</Button>
+          <Link to="/startsale"><Button className="start_sale">Start Sale</Button></Link>
         </div>
       </div>
       <div>

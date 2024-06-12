@@ -1,13 +1,17 @@
 import Layout from "./global/layout";
-import Homepage from "./pages/homepage";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from "./pages/homepage";
+import {Routes, Route} from 'react-router-dom';
+import Startsale from "./pages/startsale";
 
 
 function App() {
   return (
     <div className="App">
       <Layout>
-      <Homepage />
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/startsale" exact element={<Startsale />} />
+       </Routes>
       </Layout>
     </div>
   );
