@@ -32,9 +32,10 @@ function Sale() {
         <Row>
           <Col lg={3} className="d-none d-lg-block bg-light">
             <div className="p-3">
-              <h3>Sidebar</h3>
+              <h3>Logo</h3>
+              <h3>Login Details</h3>
               <ul className="list-unstyled">
-                <li><a href="#" className="nav-link">Home</a></li>
+                <li><a href="/" className="nav-link">Home</a></li>
                 <li><a href="#" className="nav-link">Profile</a></li>
                 <li><a href="#" className="nav-link">My Add</a></li>
                 <li><a href="#" className="nav-link">Favourite</a></li>
