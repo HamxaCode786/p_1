@@ -119,7 +119,7 @@ const LoginForm = () => {
 
     // Mock authentication function
     const authenticateUser = (email, password) => {
-      if (email === 'devhamza13@gmail.com' && password === 'tristar321') {
+      if (email === '1@gmail.com' && password === '123') {
         return { success: true, token: 'fake-jwt-token' };
       }
       return { success: false, message: 'Invalid credentials' };
