@@ -84,7 +84,8 @@ letter-spacing: 2px;
     background-color: #313131;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center
+    align-items: center;
+    
 }
 
 
@@ -779,4 +780,26 @@ font-weight: 350;
 
 
 }
+/*Add Listing Page Styling*/
+
+
+.drawer_img {
+width: 16rem;
+height: 16rem;
+margin-bottom: 3rem;
+
+
+}
+
+
+.drawer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
