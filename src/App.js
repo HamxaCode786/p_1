@@ -13,12 +13,9 @@ function App() {
       <Layout>
        
         <Routes>
-          
           <Route path="/" exact element={<HomePage />} />
           <Route path="/startsale" exact element={<Startsale />} />
           <Route path="/Loginpage" exact element={<Loginpage />} />
-    
-          
         </Routes>
       
       </Layout>

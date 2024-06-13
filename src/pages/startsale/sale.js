@@ -1,63 +1,90 @@
 
 import React, { useState } from 'react';
-import { Container, Row, Col, Button, Offcanvas } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import CssBaseline from '@mui/material/CssBaseline';
+import Toolbar from '@mui/material/Toolbar';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
+
+const drawerWidth = 240;
 
 
-function Sale() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+const Sale = () => {
   return (
-    <div>
-      <Button variant="primary" onClick={handleShow} className="d-lg-none">
-        Toggle Sidebar
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose} className="bg-light" responsive="lg">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Sidebar</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <ul className="list-unstyled">
-            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="bell" /></a></li>
-            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="inbox" /></a></li>
-            <li><a href="#" className="nav-link"><FontAwesomeIcon icon="square" /></a></li>
-            
-          </ul>
-        </Offcanvas.Body>
-      </Offcanvas>
-
-      <Container fluid>
-        <Row>
-          <Col lg={3} className="d-none d-lg-block bg-light">
-            <div className="p-3">
-              <h3>Logo</h3>
-              <h3>Login Details</h3>
-              <ul className="list-unstyled">
-                <li><a href="/" className="nav-link">Home</a></li>
-                <li><a href="#" className="nav-link">Profile</a></li>
-                <li><a href="#" className="nav-link">My Add</a></li>
-                <li><a href="#" className="nav-link">Favourite</a></li>
-                <li><a href="#" className="nav-link">Inbox</a></li>
-                <li><a href="#" className="nav-link">Billing</a></li>
-                <li><a href="#" className="nav-link">Password</a></li>
-                <li><a href="#" className="nav-link">Logout</a></li>
-              </ul>
-            </div>
-          </Col>
-          <Col lg={9}>
-            <div className="p-3">
-              <h2>Content Area</h2>
-              <p>This is the main content area.</p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <div class="drawer_1">
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <Drawer
+        sx={{
+          width: drawerWidth,
+          flexShrink: 0,
+          '& .MuiDrawer-paper': {
+            width: drawerWidth,
+            boxSizing: 'border-box',
+          },
+        }}
+        variant="permanent"
+        anchor="left"
+      >
+        <Toolbar />
+        <Divider />
+        <List>
+          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+        <Divider />
+        <List>
+          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
+      <Box
+        component="main"
+        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+      >
+        <Toolbar />
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
+          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
+          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
+          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
+          
+        </Typography>
+        <Typography paragraph>
+          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
+          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
+          
+        </Typography>
+      </Box>
+    </Box>
     </div>
   );
 }
+export default Sale
 
-export default Sale;
+
