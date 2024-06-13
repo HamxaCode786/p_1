@@ -106,7 +106,7 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit';
 import social from '../../assets/image/social.png';
-import background from '../../assets/image/background.png'; // Adjusted import name
+import background from '../../assets/image/background.png';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
