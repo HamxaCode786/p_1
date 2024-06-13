@@ -16,7 +16,7 @@ const bar = () => {
           <Button className="home_1">Home</Button>
           <Link to="/Loginpage"><Button className="login">Login</Button></Link>
           <Button className="register">Register</Button>
-          <Link to="/startsale"><Button className="start_sale">Start Sale</Button></Link>
+          <Link to="/Loginpage"><Button className="start_sale">Start Sale</Button></Link>
         </div>
       </div>
       <div>
