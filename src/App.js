@@ -3,6 +3,10 @@ import HomePage from "./pages/homepage";
 import {Routes, Route} from 'react-router-dom';
 import Startsale from './pages/startsale';
 import Loginpage from './pages/loginpage';
+import Myadpage from './pages/myadpage';
+import Inbox from './pages/inbox';
+import Favourites from "./pages/favourites";
+import Billings from './pages/billings';
 //import { faBell, faInbox, faSquare } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -16,6 +20,10 @@ function App() {
           <Route path="/" exact element={<HomePage />} />
           <Route path="/startsale" exact element={<Startsale />} />
           <Route path="/Loginpage" exact element={<Loginpage />} />
+          <Route path="/myadpage" exact element={<Myadpage />} />
+          <Route path="/inbox" exact element={<Inbox />} />
+          <Route path="/favourites" exact element={<Favourites />} />
+          <Route path="/billings" exact element={<Billings />} />
         </Routes>
       
       </Layout>

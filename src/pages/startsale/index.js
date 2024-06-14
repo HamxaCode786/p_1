@@ -3,10 +3,9 @@ import Sale from './sale'
 
 const Startsale = () => {
   return (
-    <div>
-        <Sale />
-        
-    </div>
+    <>
+        <Sale /> 
+    </>
   )
 }
 

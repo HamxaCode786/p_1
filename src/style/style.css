@@ -798,7 +798,12 @@ margin-bottom: 3rem;
     align-items: center;
 }
 
+/*START_SALE styling*/
 
+.buttons_startsale {
+
+    font-size: 10rem;
+}
 
 
 
