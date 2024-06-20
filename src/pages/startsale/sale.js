@@ -83,59 +83,74 @@ const Sale = () => {
 export default Sale */
 
 // src/components/Sale.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/Inbox';
-import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
-import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
-import MapsUgcOutlinedIcon from '@mui/icons-material/MapsUgcOutlined';
-import LocalAtmOutlinedIcon from '@mui/icons-material/LocalAtmOutlined';
-import EnhancedEncryptionOutlinedIcon from '@mui/icons-material/EnhancedEncryptionOutlined';
-import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
-import Logo_listing from '../../assets/image/drawerimage.png';
-import { AppBar } from '@mui/material';
-import TextField from '@mui/material/TextField';
+import React from "react";
+import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/Inbox";
+import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import MapsUgcOutlinedIcon from "@mui/icons-material/MapsUgcOutlined";
+import LocalAtmOutlinedIcon from "@mui/icons-material/LocalAtmOutlined";
+import EnhancedEncryptionOutlinedIcon from "@mui/icons-material/EnhancedEncryptionOutlined";
+import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+import Logo_listing from "../../assets/image/drawerimage.png";
+import { AppBar } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
 const drawerWidth = 300;
 
 const Sale = () => {
+  const [age, setAge] = React.useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   const menuItems = [
-    { text: 'Home', path: '/', icon: <HomeTwoToneIcon /> },
-    { text: 'Profile', path: '', icon: <AccountCircleOutlinedIcon /> },
-    { text: 'Add New Listing', path: "/startsale", icon: <CampaignOutlinedIcon /> },
-    { text: 'My Add', path: '/myadpage', icon: <StarBorderOutlinedIcon /> },
-    { text: 'Favourites', path: '/favourites', icon: <MapsUgcOutlinedIcon /> },
-    { text: 'Inbox', path: '/inbox', icon: <InboxIcon /> },
-    { text: 'Billings', path: '/billings', icon: <LocalAtmOutlinedIcon /> },
-    { text: 'Password', path: '', icon: <EnhancedEncryptionOutlinedIcon /> },
-    { text: 'Logout', path: '/', icon: <LogoutRoundedIcon /> }
+    { text: "Home", path: "/", icon: <HomeTwoToneIcon /> },
+    { text: "Profile", path: "", icon: <AccountCircleOutlinedIcon /> },
+    {
+      text: "Add New Listing",
+      path: "/startsale",
+      icon: <CampaignOutlinedIcon />,
+    },
+    { text: "My Add", path: "/myadpage", icon: <StarBorderOutlinedIcon /> },
+    { text: "Favourites", path: "/favourites", icon: <MapsUgcOutlinedIcon /> },
+    { text: "Inbox", path: "/inbox", icon: <InboxIcon /> },
+    { text: "Billings", path: "/billings", icon: <LocalAtmOutlinedIcon /> },
+    { text: "Password", path: "", icon: <EnhancedEncryptionOutlinedIcon /> },
+    { text: "Logout", path: "/", icon: <LogoutRoundedIcon /> },
   ];
 
   return (
     <div className="drawer_1">
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <Drawer
           sx={{
             width: drawerWidth,
             flexShrink: 0,
-            '& .MuiDrawer-paper': {
+            "& .MuiDrawer-paper": {
               width: drawerWidth,
-              boxSizing: 'border-box',
-              zIndex: '-1',
-              height: '100%',
-              position: 'static',
-              backgroundColor: 'rgba(0, 0, 0, 0.02)',
+              boxSizing: "border-box",
+              zIndex: "-1",
+              height: "100%",
+              position: "static",
+              backgroundColor: "rgba(0, 0, 0, 0.02)",
             },
           }}
           variant="permanent"
@@ -157,31 +172,144 @@ const Sale = () => {
         </Drawer>
         <Box
           component="main"
-          sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+          sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
         >
           <AppBar>
             <icon></icon>
-          </AppBar >
+          </AppBar>
           <Box>
-          <h1>Add New Listing</h1>
-          <h2>Add New Listing</h2>
+            <Box className="fh_startsale"> Add New Listing</Box>
+            <Box className="sh_startsale"> Add New Listing</Box>
           </Box>
-          <h1>
-            Add New List
-          </h1>
-          <Box>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-
-          </Box>
-
-          
-          <Box>
-
+          <Box className="th_startsale"> Add New Listing</Box>
+          <Box className="border_1">
+            <Box
+              className="first_row"
+              component="form"
+              sx={{
+                "& > :not(style)": { width: "180.5ch" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                id="outlined-basic"
+                label="Link of Social Media Account/Channel/Group which want to sale"
+                variant="outlined"
+              />
+            </Box>
+            <Box className="second_row">
+              <Box sx={{ "& > :not(style)": { width: "87ch" } }}>
+                <InputLabel id="demo-simple-select-label"></InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="Age"
+                  onChange={handleChange}
+                >
+                  <MenuItem value={10}>Ten</MenuItem>
+                  <MenuItem value={20}>Twenty</MenuItem>
+                  <MenuItem value={30}>Thirty</MenuItem>
+                </Select>
+              </Box>
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { width: "87ch" },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField
+                  id="outlined-basic"
+                  label="Enter Price"
+                  variant="outlined"
+                />
+              </Box>
+            </Box>
+            <Box className="third_row">
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { width: "89ch" },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField
+                  id="outlined-basic"
+                  label="Income in $ per month"
+                  variant="outlined"
+                />
+              </Box>
+              <Box
+                component="form"
+                sx={{
+                  "& > :not(style)": { width: "87ch" },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField
+                  id="outlined-basic"
+                  label="Expense in $ per month"
+                  variant="outlined"
+                />
+              </Box>
+            </Box>
+            <Box
+              className="fourth_row"
+              sx={{ "& > :not(style)": { width: "176ch" } }}
+            >
+              <Select value={age} label="Age" onChange={handleChange}>
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </Box>
+            <Box
+              className="fifth_row"
+              component="form"
+              sx={{
+                "& .MuiTextField-root": { width: "180.5ch" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                className="over_1"
+                id="outlined-multiline-flexible"
+                label="Description"
+                multiline
+                maxRows={4}
+              />
+            </Box>
+            <Box className="after_form">
+              <h1 className="ss_img">
+                Attach screenshots (proof of income, etc.)
+              </h1>
+              <h1 className="ss_img2">
+                If you do not need to leave contacts and open DM on the page, we
+                are ready to give you 50% more rating after the transaction is
+                completed, as this will make it easier for us to control. Rating
+                is one of the main factors of trust from buyers. An additional
+                rating will be automatically added after the completion of the
+                transaction if you check the box below, but in case of violation
+                of this agreement, we will have to block you.
+              </h1>
+              <FormGroup >
+                <FormControlLabel className="checkbox_1"
+                  control={<Checkbox defaultChecked />}
+                  label="I agree to remove contacts / close DM on the page to get 50% more rating"
+                />
+              </FormGroup>
+            </Box>
           </Box>
         </Box>
       </Box>
     </div>
   );
-}
+};
 
 export default Sale;
