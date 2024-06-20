@@ -103,7 +103,6 @@ import LocalAtmOutlinedIcon from "@mui/icons-material/LocalAtmOutlined";
 import EnhancedEncryptionOutlinedIcon from "@mui/icons-material/EnhancedEncryptionOutlined";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import Logo_listing from "../../assets/image/drawerimage.png";
-import { AppBar } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -111,6 +110,13 @@ import Select from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import Button from "react-bootstrap/Button";
+import { Container } from "react-bootstrap";
+import Toolbar from '@mui/material/Toolbar';
+import CropFreeIcon from '@mui/icons-material/CropFree';
+import { Icon } from "@mui/material";
+import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 
 const drawerWidth = 300;
 
@@ -174,9 +180,15 @@ const Sale = () => {
           component="main"
           sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
         >
-          <AppBar>
-            <icon></icon>
-          </AppBar>
+          <Box>
+          <Toolbar className="ab_sales">
+            <Container className="icon_sale1">
+          <Icon className="s1"> <CropFreeIcon/> </Icon>
+          <Icon className="s2"> <NotificationsActiveOutlinedIcon/> </Icon>
+          <Icon className="s3"> <ChatOutlinedIcon/> </Icon>
+          </Container>
+          </Toolbar>
+          </Box>
           <Box>
             <Box className="fh_startsale"> Add New Listing</Box>
             <Box className="sh_startsale"> Add New Listing</Box>
@@ -304,7 +316,10 @@ const Sale = () => {
                   label="I agree to remove contacts / close DM on the page to get 50% more rating"
                 />
               </FormGroup>
-            </Box>
+            </Box >
+            <Container className="ss_button1">
+            <Button className="ss_bs1">Add In Listing</Button>
+            </Container>
           </Box>
         </Box>
       </Box>

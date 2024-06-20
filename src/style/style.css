@@ -812,6 +812,7 @@ font-size: 32px;
 font-weight: 700;
 line-height: 38.73px;
 text-align: left;
+padding-top: 2.5rem;
 
 }
 
@@ -824,6 +825,7 @@ font-weight: 400;
 line-height: 24.2px;
 text-align: left;
 color: rgba(0, 133, 255, 1);
+padding-top: 0.5rem;
 
 }
 
@@ -937,13 +939,61 @@ margin: 2rem !important;
 
 }
 
+.ss_button1{
+
+display:flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 5rem;
+margin-top: 5rem;
+
+}
+
+.ss_bs1 {
+
+    width: 15rem;
+    height: 3rem;
+    background-color: rgba(0, 133, 255, 0.72);
+    border: none;
+}
+
+.ab_sales {
+
+margin-bottom: 0rem;
+margin-top: 0rem;
+padding-top: 0;
+position:fixed;
+border-style:groove;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    
+}
+
+.icon_sale1 {
 
 
+    display: flex;
+    align-items:flex-end;
+    justify-content:right;
+    padding-bottom: 2rem;
+    
+}
 
+.s1 {
 
+    font-size: 5rem !important;
+}
 
+.s2 {
 
+    font-size: 5rem !important;
+}
+.s3 {
 
+    font-size: 5rem !important;
+}
 
 
 
