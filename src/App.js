@@ -7,6 +7,8 @@ import Myadpage from './pages/myadpage';
 import Inbox from './pages/inbox';
 import Favourites from "./pages/favourites";
 import Billings from './pages/billings';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 //import { faBell, faInbox, faSquare } from '@fortawesome/free-solid-svg-icons';
 
 

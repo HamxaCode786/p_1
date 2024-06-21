@@ -800,6 +800,25 @@ margin-bottom: 3rem;
 
 /*START_SALE styling*/
 
+
+.dummy_1 {
+
+
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+.dummy_2 {
+    margin-top: 3rem;
+    height: 3rem;
+    height: 5rem;
+
+}
+.ss{
+
+    margin-top: 3rem;
+    border: none;
+}
 .buttons_startsale {
 
     font-size: 10rem;
@@ -996,11 +1015,84 @@ border-style:groove;
 }
 
 
+/*login button enlarges issue resolved*/
+
+
+.lb007 {      
+
+    width: 10rem;
+    height: 3rem;
+}
+/*Favorites Page Styling */
+.yt_iconfp {
+
+    color: red;
+    float: inline-start;
+}
+.fb_g1 {
+
+
+    background-color: rgba(58, 181, 75, 1);
+    border: none;
+    width: 6rem;
+    border-radius: 2rem;
+}
+
+.fb_g2 {
+    background-color: rgba(0, 133, 255, 1);
+    border: none;
+    width: 6rem;
+    border-radius: 2rem;
+
+
+
+}
+
+
+.date_1_1 {
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 19.36px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    
+
+}
+
+.head_1_1 {
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: rgba(128, 123, 123, 1);
+    }
 
 
 
 
 
+    .my_adb {
 
-
-
+        font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29.05px;
+text-align: left;
+color: rgba(58, 58, 58, 1);
+margin-top: 3rem;
+padding: 3rem;
+border-style: groove;
+border-width: 0.2px;
+border-radius: 5px;
+border-color: rgba(0, 0, 0, 0.3);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+height: 4rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    }

@@ -115,9 +115,22 @@ import { Container } from "react-bootstrap";
 import Toolbar from '@mui/material/Toolbar';
 import CropFreeIcon from '@mui/icons-material/CropFree';
 import { Icon } from "@mui/material";
+import {IconButton} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-
+import {useTheme, useMediaQuery} from '@mui/material';
+import {
+  MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBCol,
+  MDBRow,
+  MDBInput,
+}
+from 'mdb-react-ui-kit';
+import { useState } from 'react';
+import { MDBTextArea } from 'mdb-react-ui-kit';
 const drawerWidth = 300;
 
 const Sale = () => {
@@ -142,6 +155,13 @@ const Sale = () => {
     { text: "Logout", path: "/", icon: <LogoutRoundedIcon /> },
   ];
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md')); // 'md' is equivalent to 768px
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
   return (
     <div className="drawer_1">
       <Box sx={{ display: "flex" }}>
@@ -153,14 +173,15 @@ const Sale = () => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              zIndex: "-1",
+              zIndex: isMobile ? '1300' : '-1',
               height: "100%",
-              position: "static",
-              backgroundColor: "rgba(0, 0, 0, 0.02)",
+              position:isMobile ? 'fixed' : 'static',
+              backgroundColor: isMobile ? theme.palette.background.paper : 'rgba(0, 0, 0, 0.02)'
             },
           }}
-          variant="permanent"
-          anchor="left"
+          variant={isMobile ? 'temporary' : 'permanent'}
+          open={isMobile ? mobileOpen : true}
+          onClose={handleDrawerToggle}
         >
           <List>
             <div className="drawer_logo">
@@ -182,11 +203,28 @@ const Sale = () => {
         >
           <Box>
           <Toolbar className="ab_sales">
+            {isMobile && (
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2 }}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
             <Container className="icon_sale1">
-          <Icon className="s1"> <CropFreeIcon/> </Icon>
-          <Icon className="s2"> <NotificationsActiveOutlinedIcon/> </Icon>
-          <Icon className="s3"> <ChatOutlinedIcon/> </Icon>
-          </Container>
+              <Icon className="s1">
+                <CropFreeIcon />
+              </Icon>
+              <Icon className="s2">
+                <NotificationsActiveOutlinedIcon />
+              </Icon>
+              <Icon className="s3">
+                <ChatOutlinedIcon />
+              </Icon>
+            </Container>
           </Toolbar>
           </Box>
           <Box>
@@ -195,108 +233,40 @@ const Sale = () => {
           </Box>
           <Box className="th_startsale"> Add New Listing</Box>
           <Box className="border_1">
-            <Box
-              className="first_row"
-              component="form"
-              sx={{
-                "& > :not(style)": { width: "180.5ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
-                id="outlined-basic"
-                label="Link of Social Media Account/Channel/Group which want to sale"
-                variant="outlined"
-              />
-            </Box>
-            <Box className="second_row">
-              <Box sx={{ "& > :not(style)": { width: "87ch" } }}>
-                <InputLabel id="demo-simple-select-label"></InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={age}
-                  label="Age"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </Box>
-              <Box
-                component="form"
-                sx={{
-                  "& > :not(style)": { width: "87ch" },
-                }}
-                noValidate
-                autoComplete="off"
-              >
-                <TextField
-                  id="outlined-basic"
-                  label="Enter Price"
-                  variant="outlined"
-                />
-              </Box>
-            </Box>
-            <Box className="third_row">
-              <Box
-                component="form"
-                sx={{
-                  "& > :not(style)": { width: "89ch" },
-                }}
-                noValidate
-                autoComplete="off"
-              >
-                <TextField
-                  id="outlined-basic"
-                  label="Income in $ per month"
-                  variant="outlined"
-                />
-              </Box>
-              <Box
-                component="form"
-                sx={{
-                  "& > :not(style)": { width: "87ch" },
-                }}
-                noValidate
-                autoComplete="off"
-              >
-                <TextField
-                  id="outlined-basic"
-                  label="Expense in $ per month"
-                  variant="outlined"
-                />
-              </Box>
-            </Box>
-            <Box
-              className="fourth_row"
-              sx={{ "& > :not(style)": { width: "176ch" } }}
-            >
-              <Select value={age} label="Age" onChange={handleChange}>
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </Box>
-            <Box
-              className="fifth_row"
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { width: "180.5ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
-                className="over_1"
-                id="outlined-multiline-flexible"
-                label="Description"
-                multiline
-                maxRows={4}
-              />
-            </Box>
+          <MDBContainer fluid>
+
+      <MDBCard className='mx-5 mb-5 p-5 ss'>
+        <MDBCardBody className='p-5'>
+
+
+        <MDBInput className="dummy_1" wrapperClass='mb-4' label='Link of Social Media Account/Channel/Group which want to sale' id='form1' type='email'/>
+
+          <MDBRow>
+            <MDBCol col='6'>
+              <MDBInput className="dummy_1" wrapperClass='mb-4' label='Choose Subject' id='Form control lg' type='text'/>
+            </MDBCol>
+
+            <MDBCol col='6'>
+              <MDBInput className="dummy_1" wrapperClass='mb-4' label='Enter Price' id='Form control lg' type='text'/>
+            </MDBCol>
+          </MDBRow>
+          <MDBRow>
+            <MDBCol col='6'>
+              <MDBInput className="dummy_1" wrapperClass='mb-4' label='Income in $ per month' id='Form control lg' type='text'/>
+            </MDBCol>
+
+            <MDBCol col='6'>
+              <MDBInput className="dummy_1" wrapperClass='mb-4' label='Expense in $ per month' id='Form control lg' type='text'/>
+            </MDBCol>
+          </MDBRow>
+          <MDBInput className="dummy_1" wrapperClass='mb-4' label='Type of content' id='Form control lg' type='text'/>
+          <MDBTextArea className="dummy_2" label="Description" id="textAreaExample" rows="{4}" />
+          
+          
+        </MDBCardBody>
+      </MDBCard>
+
+    </MDBContainer>
             <Box className="after_form">
               <h1 className="ss_img">
                 Attach screenshots (proof of income, etc.)

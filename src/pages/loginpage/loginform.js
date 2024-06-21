@@ -152,9 +152,9 @@ const LoginForm = () => {
                 type='email' value={email} onChange={(e) => setEmail(e.target.value)} required size="lg"/>
               <MDBInput wrapperClass='mb-4 mx-5 password_o' label='Password' id='formControlLg'
                 type='password' value={password} onChange={(e) => setPassword(e.target.value)} required size="lg"/>
-              <MDBBtn className="mb-4 px-5 mx-5 lb" size='lg' type="submit">Login</MDBBtn>
+              <MDBBtn className="mb-4 px-5 mx-5 lb007" size='lg' type="submit">Login</MDBBtn>
             </form>
-            {error && <p className="text-danger ms-5">{error}</p>} {/* Display error message if there is one */}
+            {error && <p className="text-danger ms-5">{error}</p>}
             <p className="small mb-5 pb-lg-3 ms-5"><a className="text-muted1" href="#!">Forgot password?</a></p>
             <p className='ms-5'>Don't have an account? <a href="#!" className="link-info1">Register here</a></p>
           </div>

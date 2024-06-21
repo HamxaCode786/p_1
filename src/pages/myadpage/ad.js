@@ -18,6 +18,14 @@ import LocalAtmOutlinedIcon from '@mui/icons-material/LocalAtmOutlined';
 import EnhancedEncryptionOutlinedIcon from '@mui/icons-material/EnhancedEncryptionOutlined';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import Logo_listing from '../../assets/image/drawerimage.png';
+import Toolbar from '@mui/material/Toolbar';
+import CropFreeIcon from '@mui/icons-material/CropFree';
+import { Icon } from "@mui/material";
+import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import Table from 'react-bootstrap/Table';
+import { FaYoutube } from "react-icons/fa";
+import { Button, Container } from "react-bootstrap";
 
 
 const drawerWidth = 300;
@@ -76,7 +84,61 @@ const ad = () => {
           component="main"
           sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
         >
-          <p>My Add Pages</p>
+          <Box>
+          <Toolbar className="ab_sales">
+            <Container className="icon_sale1">
+          <Icon className="s1"> <CropFreeIcon/> </Icon>
+          <Icon className="s2"> <NotificationsActiveOutlinedIcon/> </Icon>
+          <Icon className="s3"> <ChatOutlinedIcon/> </Icon>
+          </Container>
+          </Toolbar>
+          </Box>
+          <Box>
+            <Box className="fh_startsale"> My Add / Listings</Box>
+            <Box className="sh_startsale"> List of my Ads / Listing</Box>
+          </Box>
+          <Box className="my_adb">My Ads <Button>Youtube</Button> </Box>
+          <Box>
+          <Table striped bordered hover>
+      <thead>
+        <tr>
+          <th className='head_1_1'>Date of Creation</th>
+          <th className='head_1_1'>Account/Channel Group Name </th>
+          <th className='head_1_1'>Amount</th>
+          <th className='head_1_1'>Subscriber</th>
+          <th className='head_1_1'>Status</th>
+          <th className='head_1_1'>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className='date_1_1'>05-03-2023</td>
+          <td><h4><FaYoutube className='yt_iconfp'/>  XYZ Gaming Zone</h4><p>Gaming and Entertainment\Channel earning from 6Month</p></td>
+          <td className='date_1_1'>60$</td>
+          <td className='date_1_1'>2000+</td>
+          <td><Button className='fb_g1'>Sale</Button></td>
+          <td><Button className='fb_g2'>Open</Button></td>
+
+        </tr>
+        <tr>
+          <td className='date_1_1'>05-03-2023</td>
+          <td><h4><FaYoutube className='yt_iconfp'/>  XYZ Gaming Zone</h4><p>Gaming and Entertainment\Channel earning from 6Month</p></td>
+          <td className='date_1_1' >60$</td>
+          <td className='date_1_1' >2000+</td>
+          <td><Button className='fb_g1'>Sale</Button></td>
+          <td><Button className='fb_g2'>Open</Button></td>
+        </tr>
+        <tr>
+          <td className='date_1_1'>05-03-2023</td>
+          <td><h4><FaYoutube className='yt_iconfp'/>  XYZ Gaming Zone</h4><p>Gaming and Entertainment\Channel earning from 6Month</p></td>
+          <td className='date_1_1'>60$</td>
+          <td className='date_1_1'>2000+</td>
+          <td><Button className='fb_g1'>Sale</Button></td>
+          <td><Button className='fb_g2'>Open</Button></td>
+        </tr>
+      </tbody>
+    </Table>
+    </Box>
         </Box>
       </Box>
     </div>
