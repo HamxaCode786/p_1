@@ -25,7 +25,7 @@ const card = () => {
         <div class="card_section1">
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt=""/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>
@@ -40,7 +40,7 @@ const card = () => {
             </div>
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt=""/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>
@@ -55,7 +55,7 @@ const card = () => {
             </div>
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt="" />
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>
@@ -74,7 +74,7 @@ const card = () => {
         <div class="card_section1">
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt=""/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>
@@ -89,7 +89,7 @@ const card = () => {
             </div>
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt=""/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>
@@ -104,7 +104,7 @@ const card = () => {
             </div>
             <div class="card_1">
                 <h1>Premium <span>Add</span></h1>
-                <img class="cimg_1" src={Card}/>
+                <img class="cimg_1" src={Card} alt=""/>
                 <h2>Branded Gaming Kit</h2>
                 <h3>Gaming</h3>
                 <h4>$499</h4>

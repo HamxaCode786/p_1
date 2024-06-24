@@ -10,7 +10,7 @@ const bar = () => {
       <div class="layer_background">
       <div class="bar_1">
         <div>
-          <img class="img_2" src={social} />
+          <img class="img_2" src={social} alt=""/>
         </div>
         <div class="buttons_1">
           <Button className="home_1">Home</Button>
@@ -113,7 +113,7 @@ const bar = () => {
         </Button>
       </div>
       <div class="Message_logo">
-        <img src={Message} />
+        <img src={Message} alt="" />
       </div>
       </div>
     </div>
