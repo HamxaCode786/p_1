@@ -25,7 +25,7 @@ const drawerWidth = 300;
 const Sale = () => {
   const menuItems = [
     { text: 'Home', path: '/', icon: <HomeTwoToneIcon /> },
-    { text: 'Profile', path: '', icon: <AccountCircleOutlinedIcon /> },
+    { text: 'Profile', path: '/profilesection', icon: <AccountCircleOutlinedIcon /> },
     { text: 'Add New Listing', path: "/startsale", icon: <CampaignOutlinedIcon /> },
     { text: 'My Add', path: '/myadpage', icon: <StarBorderOutlinedIcon /> },
     { text: 'Favourites', path: '/favourites', icon: <MapsUgcOutlinedIcon /> },
