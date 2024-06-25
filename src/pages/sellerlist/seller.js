@@ -18,9 +18,6 @@ import LocalAtmOutlinedIcon from "@mui/icons-material/LocalAtmOutlined";
 import EnhancedEncryptionOutlinedIcon from "@mui/icons-material/EnhancedEncryptionOutlined";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import Logo_listing from "../../assets/image/drawerimage.png";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 import Toolbar from "@mui/material/Toolbar";
@@ -41,6 +38,7 @@ import {
   MDBRow,
   MDBInput,
 } from "mdb-react-ui-kit";
+import Logomessage from '../../assets/image/messagelogo.png'
 import { useState } from "react";
 import { MDBTextArea } from "mdb-react-ui-kit";
 import Form from "react-bootstrap/Form";
@@ -155,8 +153,10 @@ const Seller = () => {
             <MDBContainer fluid>
               <MDBCard className="mx-5 mb-5 p-5 ss">
                 <MDBCardBody className="p-5">
-                  <Form.Select
-                    className="seller_d11"
+                <MDBRow>
+                <MDBCol  lg="12">
+                <Form.Select
+                    className="seller_d11 align-self-start"
                     aria-label="Default select example"
                   >
                     <option>Select Social Network</option>
@@ -164,8 +164,11 @@ const Seller = () => {
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </Form.Select>
+                  </MDBCol>
+                  
+                  </MDBRow>
                   <MDBRow>
-                    <MDBCol col="6">
+                    <MDBCol col="6" lg="12">
                       <MDBInput
                         className="dummy_1 seller_d1 "
                         wrapperClass="mb-4"
@@ -175,19 +178,18 @@ const Seller = () => {
                       />
                     </MDBCol>
 
-                    <MDBCol col="6">
+                    <MDBCol col="3"  lg="12">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
                         label="Subscribers to"
-                        i
-                        d="Form control lg"
+                        id="Form control lg"
                         type="text"
                       />
                     </MDBCol>
                   </MDBRow>
                   <MDBRow>
-                    <MDBCol col="6">
+                    <MDBCol col="3" lg="12">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
@@ -197,7 +199,7 @@ const Seller = () => {
                       />
                     </MDBCol>
 
-                    <MDBCol col="6">
+                    <MDBCol col="3"  lg="12">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
@@ -207,6 +209,7 @@ const Seller = () => {
                       />
                     </MDBCol>
                   </MDBRow>
+                  <MDBCol col="3" lg="12">
                   <MDBInput
                     className="dummy_1 seller_d12"
                     wrapperClass="mb-4"
@@ -214,17 +217,20 @@ const Seller = () => {
                     id="Form control lg"
                     type="text"
                   />
+                  </MDBCol>
                   <Container className="seller_search_button">
-                    <Button className="s_s_bt1">Search</Button>
+                    <Button className=" s_s_bt1">Search</Button>
                   </Container>
                 </MDBCardBody>
               </MDBCard>
             </MDBContainer>
-            <Box>
+           
+                      </Box>
+                      <Box class="ss_tb1">
               <Table striped bordered hover>
                 <thead className="st_hh1">
                   <tr>
-                    <th className="s_head_1_1">Date of Creation</th>
+                    <th className="head_1_1">Date of Creation</th>
                     <th className="head_1_1">Account/Channel Group Name </th>
                     <th className="head_1_1">Amount</th>
                     <th className="head_1_1">Subscriber</th>
@@ -273,8 +279,11 @@ const Seller = () => {
                   </tr>
                 </tbody>
               </Table>
+              <Box className="ss_logoimg">
+                <img className="ss_logoimg1" src={Logomessage} alt="" />
             </Box>
-          </Box>
+
+            </Box>
         </Box>
       </Box>
     </div>
