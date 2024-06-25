@@ -153,10 +153,8 @@ const Seller = () => {
             <MDBContainer fluid>
               <MDBCard className="mx-5 mb-5 p-5 ss">
                 <MDBCardBody className="p-5">
-                <MDBRow>
-                <MDBCol  lg="12">
-                <Form.Select
-                    className="seller_d11 align-self-start"
+                  <Form.Select
+                    className="seller_d11"
                     aria-label="Default select example"
                   >
                     <option>Select Social Network</option>
@@ -164,11 +162,8 @@ const Seller = () => {
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </Form.Select>
-                  </MDBCol>
-                  
-                  </MDBRow>
                   <MDBRow>
-                    <MDBCol col="6" lg="12">
+                    <MDBCol col="6">
                       <MDBInput
                         className="dummy_1 seller_d1 "
                         wrapperClass="mb-4"
@@ -178,18 +173,19 @@ const Seller = () => {
                       />
                     </MDBCol>
 
-                    <MDBCol col="3"  lg="12">
+                    <MDBCol col="6">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
                         label="Subscribers to"
-                        id="Form control lg"
+                        i
+                        d="Form control lg"
                         type="text"
                       />
                     </MDBCol>
                   </MDBRow>
                   <MDBRow>
-                    <MDBCol col="3" lg="12">
+                    <MDBCol col="6">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
@@ -199,7 +195,7 @@ const Seller = () => {
                       />
                     </MDBCol>
 
-                    <MDBCol col="3"  lg="12">
+                    <MDBCol col="6">
                       <MDBInput
                         className="dummy_1 seller_d1"
                         wrapperClass="mb-4"
@@ -209,7 +205,6 @@ const Seller = () => {
                       />
                     </MDBCol>
                   </MDBRow>
-                  <MDBCol col="3" lg="12">
                   <MDBInput
                     className="dummy_1 seller_d12"
                     wrapperClass="mb-4"
@@ -217,16 +212,13 @@ const Seller = () => {
                     id="Form control lg"
                     type="text"
                   />
-                  </MDBCol>
                   <Container className="seller_search_button">
-                    <Button className=" s_s_bt1">Search</Button>
+                    <Button className="s_s_bt1">Search</Button>
                   </Container>
                 </MDBCardBody>
               </MDBCard>
             </MDBContainer>
-           
-                      </Box>
-                      <Box class="ss_tb1">
+            <Box class="ss_tb1">
               <Table striped bordered hover>
                 <thead className="st_hh1">
                   <tr>
@@ -284,6 +276,7 @@ const Seller = () => {
             </Box>
 
             </Box>
+                      </Box>
         </Box>
       </Box>
     </div>
