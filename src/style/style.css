@@ -1413,8 +1413,47 @@ padding-top: 5px;
   }
 
 
+/*Notice Page Styling */
+
+.np_b1 {
+
+    margin: 2rem;
+    margin-top: 4rem;
+    height: 3rem;
+    
+}
+.cb_div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.6rem;
+    font-family: Inter;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+text-align: left;
+color: rgba(0, 0, 0, 1);
 
 
+}
+.np_b2 {
 
+    margin: 2rem;
+    border: solid;
+    border-width: 0.1px;
+    box-shadow: 0%;
+    height: 3rem;
+    background: transparent;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
 
+}
+.gap-2-11 {
+}
 
