@@ -250,6 +250,37 @@
         
     }  
     
+    @media screen and (max-width: 1050px) {
+      body {
+        font-size: 12px;
+      }
+
+      .th_startsale12 {
+
+
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: rgba(58, 58, 58, 1);
+    margin-top: 2rem;
+    padding: 3rem;
+    border-style: groove;
+    border-width: 4px;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 26rem;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    }
+    }
+
+
+
+
 
 
 

@@ -1457,3 +1457,111 @@ color: rgba(0, 0, 0, 1);
 .gap-2-11 {
 }
 
+/*create a deal styling */
+
+
+.cd_h1 {
+
+    border: solid;
+    margin: 1rem;
+    padding: 1rem;
+    border-width: 0.5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+
+
+.th_startsale12 {
+
+
+    font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29.05px;
+text-align: left;
+color: rgba(58, 58, 58, 1);
+margin-top: 3rem;
+padding: 3rem;
+border-style: groove;
+border-width: 0.2px;
+border-radius: 5px;
+border-color: rgba(0, 0, 0, 0.3);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+height: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.createdeal_h1 {
+
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+
+}
+
+
+
+
+
+
+.create_dealp1 {
+
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
+
+}
+
+
+
+.create_dealp2 {
+
+
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+
+
+}
+
+
+.createdealemail_1 {
+
+    margin-top: 5rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+
+
+}
+
+
+.form-outline12 {
+
+    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+}
+
+
+
