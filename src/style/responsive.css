@@ -3,6 +3,47 @@
           font-size: 12px;
         }
 
+        .last_button_pinlist{         /*pin listing page responsiveness*/
+
+          display: flex;
+          flex-flow: wrap;
+          justify-content: center;
+          
+          }
+
+          .dd_2pinp {
+
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+
+
+
+
+
+          }
+
+          .dd_2pinp {
+
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+
+
+
+
+          }
+
+
+          .cd_button_last_last_page {
+
+            height: 3.5rem;
+
+
+
+          }
+          
+
         .Container1 {
             display: flex;
             flex-direction: column;/* Allow items to wrap to the next line */
@@ -132,13 +173,6 @@
   
   }
 
-.last_button_pinlist{
-
-display: grid;
-grid-template-rows: 1fr 1fr;
-align-items: center;
-
-}
   
 }
 
