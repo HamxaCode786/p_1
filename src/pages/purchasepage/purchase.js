@@ -6,7 +6,7 @@ const Purchase = () => {
     <div>
       <div className="cd_h1">
         <Box>
-          <Box className="fh_startsale"> Cretae A Deal</Box>
+          <Box className="fh_startsale"> Create A Deal</Box>
           <Box className="sh_startsale">Request To Purchase</Box>
         </Box>
         <h1 className="createdeal_h1_pp">Request To Purchase</h1>

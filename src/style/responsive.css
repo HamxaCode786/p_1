@@ -121,6 +121,7 @@
 @media screen and (max-width: 480px) {
   body {
     font-size: 12px;
+    max-width: 100%;
   }
 
 .pp_forms121 {
@@ -272,6 +273,7 @@
     @media screen and (max-width: 1050px) {
       body {
         font-size: 12px;
+        max-width: 100%;
       }
 
       .th_startsale12 {

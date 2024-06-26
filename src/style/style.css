@@ -1649,5 +1649,63 @@ gap: 2rem;
 
 }
 
+/*pin Listing Page Styling */
+
+.pin_listing_p1 {
+
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    
+
+
+}
+
+.pin_listing_h1_pph1 {
+
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    
+
+
+}
+
+.d1122 {
+
+
+    width: 100%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: groove;
+    border-color: rgba(118, 118, 118, 1);
+    border-width: thin;
+    color: black;
+    margin-top: 1.5rem;
+}
+.dd_2pinp {
+
+
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
