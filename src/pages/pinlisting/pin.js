@@ -48,13 +48,47 @@ const Pin = () => {
               </div>
               <div className="dd_2pinp">
                 <MDBDropdown>
-                  <MDBDropdownToggle className="d1122">BTS</MDBDropdownToggle>
+                  <MDBDropdownToggle className="d1122">Standard</MDBDropdownToggle>
                   <MDBDropdownMenu>
                     <MDBDropdownItem link>Action</MDBDropdownItem>
                     <MDBDropdownItem link>Another action</MDBDropdownItem>
                     <MDBDropdownItem link>Something else here</MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
+                <MDBDropdown>
+                  <MDBDropdownToggle className="d1123">One Week</MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem link>Action</MDBDropdownItem>
+                    <MDBDropdownItem link>Another action</MDBDropdownItem>
+                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </div>
+            </Box>
+            <div>
+                <h1 className="pin_list_heading_3">Total Amount: $2.5 </h1>
+            </div>
+            <div className="last_button_pinlist">
+            <MDBBtn className="cd_button_last"> Pay Now</MDBBtn>
+            <MDBBtn className="cd_button_last_2"> Pin One More</MDBBtn>
+            </div>
+            
+          </Box>
+        </Box>
+        
+        <h1 className="createdeal_h1_pp">Highlight Listing</h1>
+        <Box className="th_startsalepp">
+          <Box>
+
+            
+
+            <Box className="createdealemail_1">
+              <h4 className="create_dealp2">
+                Add Information for Top Searching <br></br>
+              </h4>
+            </Box>
+            <Box>
+              <div className="DD_pinpage">
                 <MDBDropdown>
                   <MDBDropdownToggle className="d1122">BTS</MDBDropdownToggle>
                   <MDBDropdownMenu>
@@ -64,32 +98,40 @@ const Pin = () => {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </div>
+              <div className="dd_2pinp">
+                <MDBDropdown>
+                  <MDBDropdownToggle className="d1122">One Week</MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem link>Action</MDBDropdownItem>
+                    <MDBDropdownItem link>Another action</MDBDropdownItem>
+                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+                <MDBDropdown>
+                  <MDBDropdownToggle className="d1123">Heading Color</MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem link>Action</MDBDropdownItem>
+                    <MDBDropdownItem link>Another action</MDBDropdownItem>
+                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </div>
             </Box>
-            <div class="form-outline12" data-mdb-input-init>
-              <input type="email" id="typeEmail" class="form-control" />
-              <label class="form-labelcdp" for="typeEmail">
-                Enter Your Email Adress
-              </label>
+            <div>
+                <h1 className="pin_list_heading_3">Total Amount: $0.5 </h1>
             </div>
+            <div className="last_button_pinlist">
+            <MDBBtn className="cd_button_last"> Pay Now</MDBBtn>
+            <MDBBtn className="cd_button_last_2">Highlight One More</MDBBtn>
+            </div>
+            <h1 className="pin_list_heading_31">Total Amount: $3.00 </h1>
             <div className="d-grid gap-2cdb">
-              <MDBBtn className="cd_button_last"> Pay Now</MDBBtn>
+              <MDBBtn className="cd_button_last_last_page"> Pay For Everything At One Time</MDBBtn>
             </div>
-            <div class="pp_forms121">
-              <div class="form-outline_res1" data-mdb-input-init>
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-labelcdp" for="typeText">
-                  Name
-                </label>
-              </div>
-              <div class="form-outline_res1" data-mdb-input-init>
-                <input type="text" id="typeText" class="form-control" />
-                <label class="form-labelcdp" for="typeText">
-                  Sur Name
-                </label>
-              </div>
-            </div>
+            
           </Box>
         </Box>
+
       </div>
     </div>
   );
