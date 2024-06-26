@@ -115,6 +115,25 @@
         margin-right: 10px;
       }
 
+
+/*purchase page */
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+.pp_forms121 {
+
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 2rem;
+  
+  }
+  
+}
+
+
       }
 
       @media screen and (max-width: 768px) {

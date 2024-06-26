@@ -10,7 +10,8 @@ import Billings from './pages/billings';
 import Profilesection from "./pages/profilesection";
 import Sellerlist from './pages/sellerlist';
 import Controlnotice from './pages/controlnotice'
-import Dealcreation from './pages/dealcreation' 
+import Dealcreation from './pages/dealcreation'
+import Purchasepage from "./pages/purchasepage"; 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 //import { faBell, faInbox, faSquare } from '@fortawesome/free-solid-svg-icons';
@@ -34,6 +35,7 @@ function App() {
           <Route path="/sellerlist" exact element={<Sellerlist />} />
           <Route path="/controlnotice" exact element={<Controlnotice />} />
           <Route path="/dealcreation" exact element={<Dealcreation />} />
+          <Route path="/purchasepage" exact element={<Purchasepage />} />
         
           
         </Routes>

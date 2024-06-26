@@ -1558,8 +1558,94 @@ text-align: left;
 .form-outline12 {
 
     margin-top: 2rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
+
+}
+.form-labelcdp {
+
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    padding-top: 0.5rem;    
+
+
+}
+
+.gap-2cdb  {
+
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.cd_button_last {
+
+background-color:rgba(0, 133, 255, 0.72);
+border: none;
+height: 2.5rem;
+;
+
+
+
+}
+
+
+.th_startsalepp {
+
+
+    font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29.05px;
+text-align: left;
+color: rgba(58, 58, 58, 1);
+margin-top: 0rem;
+padding: 2rem;
+border-style: groove;
+border-width: 0.2px;
+border-radius: 0px;
+border-color: rgba(0, 0, 0, 0.3);
+height:auto;
+}
+.createdeal_h1_pp {
+
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    padding-top: 2rem;
+    border-style: groove;
+border-width: 0.2px;
+border-radius: 0px;
+border-color: rgba(0, 0, 0, 0.3);
+height:auto;
+margin-bottom: -2px;
+padding: 2rem;
+margin-top: 2rem;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.createdeal_h1_pph1 {
+
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 19.36px;
+text-align: left;
+padding-top: 1rem;
+padding-bottom: 1rem;
+    
+
+
+}
+
+.pp_forms121 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
 
 }
 

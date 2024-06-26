@@ -97,10 +97,13 @@ const deal = () => {
           </Box>
           <div class="form-outline12" data-mdb-input-init>
             <input type="email" id="typeEmail" class="form-control" />
-            <label class="form-label" for="typeEmail">
-              Email input
+            <label class="form-labelcdp" for="typeEmail">
+              Enter Your Email Adress
             </label>
           </div>
+          <div className="d-grid gap-2cdb">
+      <MDBBtn className="cd_button_last"> Create Deal</MDBBtn>
+    </div>
         </Box>
       </div>
     </div>
