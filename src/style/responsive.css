@@ -44,6 +44,9 @@
 
 
           }
+
+
+
           
 
         .Container1 {
@@ -353,8 +356,64 @@
 
 
 
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+    max-width: 100%;
+  }
+.psborder_1 {
+
+display: flex;
+flex-flow: wrap;
+justify-content: center;
+padding: 0rem;
+margin: 0rem;
+margin-top: 2rem;
+
+}
+
+.logo_section1 {
+
+display: flex;
+flex-flow: wrap;
+justify-content: center;
+padding: 0rem;
+margin: 0rem;
 
 
+}
+
+.logo_lorum12 {
+
+width:14rem ;
+height:14rem ;
+padding-right: 1rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
