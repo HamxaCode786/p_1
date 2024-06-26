@@ -385,17 +385,42 @@ margin: 0rem;
 
 .logo_lorum12 {
 
-width:14rem ;
-height:14rem ;
+width:15rem ;
+height:14.5rem ;
 padding-right: 1.5rem;
 
 
 }
 
+.psp_1 p {
+
+  line-height: 22px;
+  word-spacing: 3px;
+}
+
+.cb_div {
+
+display: flex;
+flex-flow: wrap;
+justify-content: center;
+
+}
+.row {
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  
+  
+}
+
+.icon_sale1 {
+
+padding-bottom: 3rem;
 
 
 
-
+}
 
 
 
