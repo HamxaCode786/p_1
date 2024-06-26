@@ -134,8 +134,10 @@
 
 .last_button_pinlist{
 
+display: grid;
+grid-template-rows: 1fr 1fr;
+align-items: center;
 
-  
 }
   
 }
