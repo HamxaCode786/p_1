@@ -446,15 +446,13 @@ align-items: center;
 
     
   }
-  
-.pt_4 {
+.form_logo {
 
-display: flex;
-justify-content: center;
-align-items: center;
+margin-right: 4rem;
+width: 250px;
+height: 200px;
 
-
-}
+}  
 
 /* Footer Responsive */
 
