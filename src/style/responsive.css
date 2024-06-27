@@ -191,6 +191,7 @@
             flex-direction: column;/* Allow items to wrap to the next line */
             align-items: center;
             height: 150px;
+            gap: 10rem;
             
           }
           .icons_1{
