@@ -91,9 +91,6 @@
             margin-left: 10px;
             padding: 10px;
           }
-          .buttons_1{
-            
-          }
 
           .home_1{
             margin: 0;
@@ -252,7 +249,7 @@
         padding: 0;       
 
         }
-        .Register {
+        .register {
             margin: 0;
         padding: 0;       
         }
@@ -265,37 +262,104 @@
 
       .heading_1 {
         margin: 6px;
+        font-size:75px;
       }
 
       .heading_2 {
         margin: 10px;
+        font-size:55px;
+
+
       }
       .heading_3 {
         margin: 10px;
       }
       .custom-button-group {
 
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 10px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-bottom: 2rem;
+        
+      }
+
+      .fb_1 {
+
+        font-size: 14px;
+        height: 60px;
+      }
+
+      .fb_2 {
+
+        font-size: 14px;
+        height: 60px;
+
+      }
+
+      .fb_3 {
+
+        font-size: 14px;
+        height: 60px;
+
       }
       .custom-button-group2 {
 
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 10px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-bottom: 2rem;
+        gap: 2rem;
       }
+
+      .fb_4 {
+
+        font-size: 14px;
+
+      }
+      
+      .fb_5 {
+
+        font-size: 14px;
+
+      }
+
       .editable_dropdowns {
 
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
         align-items:center;
-        gap: 75px;
+        gap: 2rem;
       }
       .website_links {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
       }
+
+      .fb_6 {
+
+
+        font-size: 14px;
+      }
+      .fb_7 {
+
+
+        font-size: 14px;
+      }
+      .fb_8 {
+
+
+        font-size: 14px;
+      }
+      .fb_9 {
+
+
+        font-size: 14px;
+      }
+
+
+
       .footer_1 {
         width: 100%;
         height: 226px;
@@ -313,8 +377,126 @@
 
       
     }
-            
-        
+
+
+    .divch_1 {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+margin: 0px;
+margin-top: 5rem;
+margin-bottom: 2rem;
+
+
+    }
+
+
+    .ch_1 {
+
+      text-align: center;
+      font-size: 18px;
+      padding-right: 5rem;
+    }
+.cb_1 {
+
+  font-size: 12px;
+}
+.cb_2 {
+
+  font-size: 12px;
+}            
+.cb_3 {
+
+  font-size: 12px;
+}            
+.card_section1 {
+
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.hp_l1 {
+
+height:8rem;
+
+}
+.card_buttons1 {
+display: flex;
+justify-content: center;
+align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+
+
+
+/* LoginPage Responsiveness */
+
+
+
+.row {
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+    
+  }
+  
+.pt_4 {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+/* Footer Responsive */
+
+.img_1 {
+
+margin: 0;
+padding: 0;
+
+}
+
+.ht_2 {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer_1 {
+
+display: flex;
+justify-content:space-around;
+align-items: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }  
     
     @media screen and (max-width: 1050px) {
@@ -421,9 +603,6 @@ padding-bottom: 3rem;
 
 
 }
-
-
-
 
 
 

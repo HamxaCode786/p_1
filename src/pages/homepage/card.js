@@ -5,7 +5,7 @@ import Card from '../../assets/image/card.png';
 const card = () => {
   return (
     <div>
-        <div>
+        <div className='divch_1'>
             <h1 class="ch_1">Sorted By</h1>
         </div>
         <div class="card_buttons1">
