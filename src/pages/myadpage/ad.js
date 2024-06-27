@@ -26,13 +26,17 @@ import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import Table from 'react-bootstrap/Table';
 import { FaYoutube } from "react-icons/fa";
 import { Button, Container } from "react-bootstrap";
+import { useTheme, useMediaQuery } from "@mui/material";
+import { useState } from "react";
+import { IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 
 const drawerWidth = 300;
 
 
 
-const ad = () => {
+const Ad = () => {
     const menuItems = [
         { text: 'Home', path: '/', icon: <HomeTwoToneIcon /> },
         { text: 'Profile', path: '/profilesection', icon: <AccountCircleOutlinedIcon /> },
@@ -44,27 +48,39 @@ const ad = () => {
         { text: 'Password', path: '', icon: <EnhancedEncryptionOutlinedIcon /> },
         { text: 'Logout', path: '/', icon: <LogoutRoundedIcon /> }
       ];
+
+      const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md")); // 'md' is equivalent to 768px
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
     
   return (
     
     <div className="drawer_1">
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <Drawer
           sx={{
             width: drawerWidth,
             flexShrink: 0,
-            '& .MuiDrawer-paper': {
+            "& .MuiDrawer-paper": {
               width: drawerWidth,
-              boxSizing: 'border-box',
-              zIndex: '-1',
-              height: '100%',
-              position: 'static',
-              backgroundColor: 'rgba(0, 0, 0, 0.02)',
+              boxSizing: "border-box",
+              zIndex: isMobile ? "1300" : "-1",
+              height: "100%",
+              position: isMobile ? "fixed" : "static",
+              backgroundColor: isMobile
+                ? theme.palette.background.paper
+                : "rgba(0, 0, 0, 0.02)",
             },
           }}
-          variant="permanent"
-          anchor="left"
+          variant={isMobile ? "temporary" : "permanent"}
+          open={isMobile ? mobileOpen : true}
+          onClose={handleDrawerToggle}
         >
           <List>
             <div className="drawer_logo">
@@ -82,16 +98,33 @@ const ad = () => {
         </Drawer>
         <Box
           component="main"
-          sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+          sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
         >
           <Box>
-          <Toolbar className="ab_sales">
-            <Container className="icon_sale1">
-          <Icon className="s1"> <CropFreeIcon/> </Icon>
-          <Icon className="s2"> <NotificationsActiveOutlinedIcon/> </Icon>
-          <Icon className="s3"> <ChatOutlinedIcon/> </Icon>
-          </Container>
-          </Toolbar>
+            <Toolbar className="ab_sales">
+              {isMobile && (
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  edge="start"
+                  onClick={handleDrawerToggle}
+                  sx={{ mr: 2 }}
+                >
+                  <MenuIcon />
+                </IconButton>
+              )}
+              <Container className="icon_sale1">
+                <Icon className="s1">
+                  <CropFreeIcon />
+                </Icon>
+                <Icon className="s2">
+                  <NotificationsActiveOutlinedIcon />
+                </Icon>
+                <Icon className="s3">
+                  <ChatOutlinedIcon />
+                </Icon>
+              </Container>
+            </Toolbar>
           </Box>
           <Box>
             <Box className="fh_startsale"> My Add / Listings</Box>
@@ -144,4 +177,4 @@ const ad = () => {
     </div>
   );
 }
-export default ad
+export default Ad
