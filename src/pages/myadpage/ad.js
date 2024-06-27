@@ -132,7 +132,7 @@ const Ad = () => {
           </Box>
           <Box className="my_adb">My Ads <Button>Youtube</Button> </Box>
           <Box>
-          <Table striped bordered hover>
+          <Table className ="table table-striped table bordered table-hover_12">
       <thead>
         <tr>
           <th className='head_1_1'>Date of Creation</th>
