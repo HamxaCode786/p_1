@@ -13,6 +13,7 @@ import Controlnotice from './pages/controlnotice'
 import Dealcreation from './pages/dealcreation'
 import Purchasepage from "./pages/purchasepage";
 import Pinlisting from "./pages/pinlisting";
+import Registration from "./pages/registration";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 //import { faBell, faInbox, faSquare } from '@fortawesome/free-solid-svg-icons';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/dealcreation" exact element={<Dealcreation />} />
           <Route path="/purchasepage" exact element={<Purchasepage />} />
           <Route path="/pinlisting" exact element={<Pinlisting />} />
+          <Route path="/registration" exact element={<Registration />} />
         
           
         </Routes>

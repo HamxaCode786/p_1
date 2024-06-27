@@ -17,7 +17,9 @@ const bar = () => {
             <Link to="/Loginpage">
               <Button className="login">Login</Button>
             </Link>
-            <Button className="register">Register</Button>
+            <Link to="/registration">
+            <Button  className="register">Register</Button>
+            </Link>
             <Link to="/Loginpage">
               <Button className="start_sale">Start Sale</Button>
             </Link>
