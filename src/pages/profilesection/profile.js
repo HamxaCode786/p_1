@@ -30,7 +30,7 @@ import { useTheme, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { MDBBtn } from "mdb-react-ui-kit";
 import Logolorum from "../../assets/image/lorumipsumlogo.jpeg";
-import { Rating } from "react-simple-star-rating";
+//import { Rating } from "react-simple-star-rating";
 const drawerWidth = 300;
 
 const Profile = () => {
@@ -159,13 +159,13 @@ const Profile = () => {
                 <h1> Hello Azlan</h1>
                 <h2> Azlan@yahoo.com</h2>
                 <h3> Memmber Since 31 Jan, 2023</h3>
-                <Rating className="rating_1"
+                {/* <Rating className="rating_1"
                   onClick={handleRating}
                   onPointerEnter={onPointerEnter}
                   onPointerLeave={onPointerLeave}
                   onPointerMove={onPointerMove}
                   iconSize={10}
-                />
+                /> */}
                 <div className="psbd_1">
                   <MDBBtn rounded className="psmx-2" > Pass</MDBBtn>
                   <MDBBtn rounded className="psmx-2_1" color="secondary">
