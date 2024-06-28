@@ -53,8 +53,12 @@ const Sale = () => {
     setLoading(true);
 
     try {
+    
+      console.log('Sending request with API key:', process.env.REACT_APP_HUGGINGFACE_API_KEY);
+
+
       const response = await axios.post(
-        'https://api.openai.com/v1/engines/davinci-codex/completions',
+        'https://api-inference.huggingface.co/models/gpt2',
         {
           prompt: message,
           max_tokens: 150,
@@ -65,10 +69,18 @@ const Sale = () => {
         {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
+            'Authorization': `Bearer ${process.env.REACT_APP_HUGGINGFACE_API_KEY}`,
           },
         }
       );
+      console.log('API response:', response); // Log the full response
+
+      if (response.data && response.data[0] && response.data[0].generated_text) {
+        const botMessage = { from: 'bot', text: response.data[0].generated_text.trim() };
+        setChat([...chat, userMessage, botMessage]);
+      } else {
+        console.error('Unexpected API response format:', response.data);
+      }
 
       const botMessage = { from: 'bot', text: response.data.choices[0].text.trim() };
       setChat([...chat, userMessage, botMessage]);
