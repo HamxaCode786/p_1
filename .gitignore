@@ -10,6 +10,10 @@
 
 # production
 /build
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e33eca (yes)
 
 # misc
 .DS_Store

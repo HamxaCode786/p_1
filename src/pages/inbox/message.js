@@ -37,6 +37,17 @@ const Sale = () => {
     { text: 'Logout', path: '/', icon: <LogoutRoundedIcon /> }
   ];
 
+  /* Drawer Toggle Code */
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md")); // 'md' is equivalent to 768px
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+
+
 /* ChatBot Configurations */
 
   // const [message, setMessage] = useState('');
@@ -87,7 +98,6 @@ const Sale = () => {
 
   //   setLoading(false);
   };
-
 
   return (
     <div className="drawer_1">
