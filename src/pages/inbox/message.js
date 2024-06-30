@@ -19,9 +19,6 @@ import EnhancedEncryptionOutlinedIcon from '@mui/icons-material/EnhancedEncrypti
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import Logo_listing from '../../assets/image/drawerimage.png';
 import { useState } from 'react';
-<<<<<<< HEAD
-import axios from 'axios';
-=======
 import { useTheme, useMediaQuery } from "@mui/material";
 >>>>>>> 62a0655 (yes)
 
