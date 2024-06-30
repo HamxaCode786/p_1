@@ -63,6 +63,7 @@ const Sale = () => {
 
   //   setLoading(true);
 
+<<<<<<< HEAD
     try {
       console.log('Sending request with API key:', process.env.REACT_APP_OPENAI_API_KEY);
       console.log('Sending message:', message);
@@ -83,6 +84,28 @@ const Sale = () => {
           },
         }
       );
+=======
+  //   try {
+  //     console.log('Sending request with API key:',REACT_APP_OPENAI_API_KEY);
+  //     console.log('Sending message:', message);
+
+  //     const response = await axios.post(
+  //       'https://api.openai.com/v1/engines/davinci-codex/completions',
+  //       {
+  //         prompt: message,
+  //         max_tokens: 150,
+  //         n: 1,
+  //         stop: null,
+  //         temperature: 0.5,
+  //       },
+  //       {
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //           'Authorization': `Bearer ${}`,
+  //         },
+  //       }
+  //     );
+>>>>>>> d58213c (yes)
 
       console.log('API response:', response.data);
 
