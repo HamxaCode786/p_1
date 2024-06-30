@@ -19,11 +19,7 @@ import EnhancedEncryptionOutlinedIcon from '@mui/icons-material/EnhancedEncrypti
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import Logo_listing from '../../assets/image/drawerimage.png';
 import { useState } from 'react';
-<<<<<<< HEAD
 import axios from 'axios';
-=======
-import { useTheme, useMediaQuery } from "@mui/material";
->>>>>>> 62a0655 (yes)
 
 
 const drawerWidth = 300;
@@ -68,11 +64,11 @@ const Sale = () => {
   //   setLoading(true);
 
   //   try {
-  //     console.log('Sending request with API key:',);
+  //     console.log('Sending request with API key:',REACT_APP_OPENAI_API_KEY);
   //     console.log('Sending message:', message);
 
   //     const response = await axios.post(
-  //       
+  //       'https://api.openai.com/v1/engines/davinci-codex/completions',
   //       {
   //         prompt: message,
   //         max_tokens: 150,
