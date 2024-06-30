@@ -20,7 +20,6 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import Logo_listing from '../../assets/image/drawerimage.png';
 import { useState } from 'react';
 import { useTheme, useMediaQuery } from "@mui/material";
->>>>>>> 62a0655 (yes)
 
 
 const drawerWidth = 300;
@@ -85,20 +84,20 @@ const Sale = () => {
   //       }
   //     );
 
-      console.log('API response:', response.data);
+  //     console.log('API response:', response.data);
 
-      if (response.data && response.data.choices && response.data.choices.length > 0) {
-        const botMessage = { from: 'bot', text: response.data.choices[0].text.trim() };
-        setChat([...chat, userMessage, botMessage]);
-      } else {
-        console.error('Unexpected API response format:', response.data);
-      }
-    } catch (error) {
-      console.error('Error sending message to OpenAI:', error);
-    }
+  //     if (response.data && response.data.choices && response.data.choices.length > 0) {
+  //       const botMessage = { from: 'bot', text: response.data.choices[0].text.trim() };
+  //       setChat([...chat, userMessage, botMessage]);
+  //     } else {
+  //       console.error('Unexpected API response format:', response.data);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error sending message to OpenAI:', error);
+  //   }
 
   //   setLoading(false);
-  };
+  
 
   return (
     <div className="drawer_1">
@@ -108,17 +107,20 @@ const Sale = () => {
           sx={{
             width: drawerWidth,
             flexShrink: 0,
-            '& .MuiDrawer-paper': {
+            "& .MuiDrawer-paper": {
               width: drawerWidth,
-              boxSizing: 'border-box',
-              zIndex: '-1',
-              height: '100%',
-              position: 'static',
-              backgroundColor: 'rgba(0, 0, 0, 0.02)',
+              boxSizing: "border-box",
+              zIndex: isMobile ? "1300" : "-1",
+              height: "100%",
+              position: isMobile ? "fixed" : "static",
+              backgroundColor: isMobile
+                ? theme.palette.background.paper
+                : "rgba(0, 0, 0, 0.02)",
             },
           }}
-          variant="permanent"
-          anchor="left"
+          variant={isMobile ? "temporary" : "permanent"}
+          open={isMobile ? mobileOpen : true}
+          onClose={handleDrawerToggle}
         >
           <List>
             <div className="drawer_logo">
@@ -138,8 +140,8 @@ const Sale = () => {
           component="main"
           sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
         >
-        <div style={{ padding: '20px' }}>
-      <h1>AI Chatbot</h1>
+        {/* <div style={{ padding: '20px' }}>
+      <h1>Inbox</h1>
       <div style={{ border: '1px solid #ccc', padding: '10px', height: '300px', overflowY: 'scroll' }}>
         {chat.map((entry, index) => (
           <div key={index} style={{ textAlign: entry.from === 'user' ? 'right' : 'left' }}>
@@ -156,7 +158,7 @@ const Sale = () => {
         style={{ width: '80%', padding: '10px', marginRight: '10px' }}
       />
       <button onClick={handleSend} style={{ padding: '10px' }}>Send</button>
-    </div>
+    </div> */}
         </Box>
       </Box>
     </div>
