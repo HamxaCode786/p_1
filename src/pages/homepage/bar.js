@@ -118,10 +118,12 @@ const bar = () => {
           <Button href="" className="fb_10">
             Search
           </Button>
+          
         </div>
         <div class="Message_logo">
           <img className="hp_l1" src={Message} alt="" />
         </div>
+        
       </div>
     </div>
   );

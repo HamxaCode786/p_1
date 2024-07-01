@@ -19,7 +19,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook size={30} color="#3b5998" />
+                <FaFacebook size={30} color="#1877F2" />
               </a>
               <a
                 href="https://www.linkedin.com"
@@ -32,11 +32,11 @@ function Header() {
           </div>
           <div class="Para1">
             <div>
-              <p class="t1">Notifications:</p>
+              <p class="t1">Notifications: </p>
             </div>
             <div>
               <p class="t2">
-                Lorem ipsum dolor sit amet consectetur adipiscing
+              Lorem ipsum dolor sit amet consectetur adipiscing
               </p>
             </div>
           </div>
