@@ -20,7 +20,7 @@ const card = () => {
         </Button>
         </div>
 
-        <div>
+        <div className='cards_area'>
 
         <div class="card_section1">
             <div class="card_1">

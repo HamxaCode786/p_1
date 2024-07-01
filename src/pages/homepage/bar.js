@@ -18,7 +18,7 @@ const bar = () => {
               <Button className="login">Login</Button>
             </Link>
             <Link to="/registration">
-            <Button  className="register">Register</Button>
+              <Button className="register">Register</Button>
             </Link>
             <Link to="/Loginpage">
               <Button className="start_sale">Start Sale</Button>
@@ -99,7 +99,7 @@ const bar = () => {
             </select>
           </div>
         </div>
-      
+
         <div class="website_links">
           <Button a href="https://www.facebook.com/" className="fb_6">
             Facebook
@@ -122,7 +122,6 @@ const bar = () => {
         <div class="Message_logo">
           <img className="hp_l1" src={Message} alt="" />
         </div>
-        
       </div>
     </div>
   );
