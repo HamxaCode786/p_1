@@ -169,7 +169,7 @@ padding-top: 2rem;
     .register {
         width: 110px;
             height: 40px;
-        padding-right: 20px;
+        padding-right: 13px;
         padding-top: 4px;
         font-family: Inter;
         font-size: 15px;
@@ -182,13 +182,20 @@ padding-top: 2rem;
         box-shadow: none;
         background: transparent;
         text-transform: none;
+        
+        }
+
+        .register:hover {
+            background-color: #FD8901;
+            border: none;
+            box-shadow: none;
         }
         
         .login {
         
             width: 102px;
             height: 40px;
-        padding-right: 5px;
+        padding-right: 7px;
         padding-top: 6px;
         font-family: Inter;
         font-size: 15px;
@@ -201,6 +208,8 @@ padding-top: 2rem;
         background-color: #FD8901;
         text-transform: none;
         }
+
+        
         
         .start_sale {
             width: 130px;
@@ -217,6 +226,15 @@ padding-top: 2rem;
         box-shadow: none;
         background: transparent;
         text-transform: none;
+        }
+
+        .start_sale:hover {
+
+            background-color: #FD8901;
+            border: none;
+            text-shadow: none;
+            box-shadow: none;
+       
         }
 
 
@@ -625,11 +643,11 @@ padding-top: 30px;
 
 }
 .cb_1{
-    background-color:#0085FF;
+    background-color: rgb(18, 107, 138);
     color: white;
     width: 160px;
     height: 50px;
-    border-color: #0085FF;;
+    border-color: rgb(18, 107, 138);
     border-radius: 10px 0px 0px 10px;
     font-family: Inter;
 font-size: 15px;
@@ -642,11 +660,11 @@ text-transform: none;
 }
 
 .cb_2{
-    background-color: skyblue;
+    background-color: rgb(236, 243, 246);
     color: black;
     width: 160px;
     height: 50px;
-    border-color: skyblue;
+    border-color:rgb(236, 243, 246);
     border: none;
     border-radius: 0px !important;
     font-family: Inter;
@@ -659,11 +677,11 @@ text-transform: none;
 
 }
 .cb_3{
-    background-color:skyblue;
+    background-color:rgb(236, 243, 246);
     color: black;
     width: 160px;
     height: 50px;
-    border-color: skyblue;
+    border-color: rgb(236, 243, 246);
     border-radius: 0px 10px 10px 0px;
     font-family: Inter;
     font-size: 15px;
@@ -700,7 +718,8 @@ text-transform: none;
 
 
 .cimg_1 {
-    width: 500px;
+    width: 100%;
+    height: 17rem;
 
 }
 
@@ -711,8 +730,10 @@ text-transform: none;
     align-items: center;
     padding: 20px;
     gap: 90px;
+    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+    margin-bottom:3rem;
     
     
 }
@@ -767,6 +788,7 @@ font-weight: 500;
 line-height: 48.41px;
 text-align: center;
 color: rgba(57, 89, 170, 1);
+padding-bottom: 1.2rem;
 
 }
 
@@ -802,12 +824,16 @@ font-weight: 700;
 line-height: 18.15px;
 text-align: center;
 padding-bottom: 10px;
+padding-top:1.2rem ;
 
 }
 
 .cardbutton_1 {
 
     width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 0.7rem;
 }
 .form_logo {
 
