@@ -23,7 +23,7 @@ background-color: #1E437B;
 display: flex;
 justify-content: space-between;
 align-items: center;
-gap: 5rem;
+
 
 }
 
@@ -350,6 +350,7 @@ line-height: 21.78px;
 text-align: center;
 box-shadow: none;
 text-transform: none;
+color: gray;
 
 
 }
@@ -371,6 +372,7 @@ border: none;
 text-align: center;
 box-shadow: none;
 text-transform: none;
+color: gray;
 
 
 }
@@ -392,6 +394,7 @@ border-top-right-radius: 5px;
 border-bottom-right-radius: 5px;
 box-shadow: none;
 text-transform: none;
+color: gray;
 
 
 }
