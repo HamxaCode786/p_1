@@ -131,7 +131,7 @@ const LoginForm = () => {
 
       localStorage.setItem('token', response.token);
       setError('');
-      navigate('/startsale');
+      navigate('/Homepage2');
     } else {
       setError(response.message);
     }

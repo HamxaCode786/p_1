@@ -7,13 +7,17 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+    max-width: 100%;
+    
 }
 
 
 /* Header */
 
 .Container1 {
-width: 100%;
+
+
+ width: 100%;
 height: 48px;
 top: -5px;
 gap: 0px;
@@ -1885,15 +1889,68 @@ height: 2.5rem;
 
 
 }
-/* table Scroll Styling */
+/* Home Page 2 Styling */
+
+.bar_1hp2 {
+max-width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-bottom: #fff;
+    border-width: 2.5px;
+    border-style: solid;
+
+padding-top: 1rem;
+padding-bottom: 1rem;
+gap: 32rem;
+}
+
+.buttons_1hp2 {
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 4rem;
+
+}
+
+.home_1hp2 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    height: 40px;
+    justify-content: center;
+    border-radius: 12px;
+    
 
 
 
+}
+
+.start_salehp2 {
+
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    height: 40px;
+    justify-content: center;
+    border-radius: 12px;
 
 
-
-
-
+}
 
 
 
